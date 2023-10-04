@@ -10,4 +10,4 @@ Built with React + Vite, JavaScript, HTML, CSS
 
 - Adding audio file: https://forum.freecodecamp.org/t/playing-local-mp3-file-in-visual-studio-code/451363
 
--Disabling button: https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute
+- Disabling button: https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute
