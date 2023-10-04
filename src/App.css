@@ -26,30 +26,64 @@
     font-size: 50px;
     -webkit-text-stroke: 1px yellow;
   }
+  .App > nav > div{
+    display: flex;
+    align-items: center;
+    gap: 0px 10px;
+    position: relative;
+      left: 20vw;
+  }
+    .App > nav > div > img{
+      cursor: pointer;
+    }
+.App > main{
+  grid-row: 2/3;
+  background-image: url('/images/space.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100vw;
+
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 0px 40px 40px 40px;
+}
+.App > main > #buttons{
+  display: flex;
+  column-gap: 800px;
+  padding-bottom: 20px;
+}
+.App > main > #buttons > button{
+  padding: 10px 20px;
+  font-family: Rubik Mono One;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 5px yellowgreen inset;
+  color: black;
+  /* background-color: rgba(240, 255, 255, 0.612); */
+}
+.App > main > #buttons > button:hover{
+  cursor: pointer;
+}
 
 
 /* Card Component */
 .Card{
   grid-row: 2/3;
-  background-image: url('/public/images/background.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: 100vw;
-  overflow-y: scroll;
-  /* height: 100vh; */
-  
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 40px 10px;
-  padding: 50px;
 }
 .Card > div{
   height: 200px;
   width: 350px;
-  background-color: rgba(128, 128, 128, 0.482);
+  background-color: rgba(52, 53, 62, 0.387);
   border-radius: 10px;
-
+  margin: 0px 20px;
+  
   display: flex;
   justify-content: center;
   align-items: center;
