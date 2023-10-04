@@ -17,12 +17,10 @@ function App() {
     }
   }
   
-  
   useEffect(() => {
     getAllStarships(page)
   }, [])
 
-  
   const nextPage = (evt) => {
     evt.preventDefault()
     setPage(page + 1)
@@ -35,6 +33,7 @@ function App() {
     getAllStarships(page - 1)
   }
 
+  //Button Toggle
   let nextButton = document.querySelector('#next-button')
   let backButton = document.querySelector('#prev-button')
   if(page === 1){
@@ -42,15 +41,17 @@ function App() {
   }else{
     backButton?.removeAttribute('disabled', '')
   }
-  
   if(page === 4){
     nextButton?.setAttribute('disabled', '')
   }else{
     nextButton?.removeAttribute('disabled', '')
   }
+
+  //Audio
   const audio = new Audio('/images/StarWarsOpening.mp3')
   let playButton = document.querySelector('#play')
   let pauseButton = document.querySelector('#pause')
+
   playButton?.addEventListener('click', () => {
     audio.play()
   })
