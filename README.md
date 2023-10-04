@@ -2,7 +2,7 @@
 
 Star Wars application displaying ships using Star Wars API (https://swapi.dev/). Used DOM Manipulation and useState hook to add pagination feature.
 
-- Be advised, set computer volume to low before pressing play button \*
+_Be advised, set computer volume to low before pressing play button_
 
 Built with React + Vite, JavaScript, HTML, CSS
 
